@@ -74,7 +74,21 @@
             <ImageView
                 android:id="@+id/iv_content_foto"
                 android:layout_width="wrap_content"
-                android:layout_height="200dp"/>
+                android:layout_height="wrap_content"
+                tools:src="@tools:sample/avatars"/>
+
+            <ImageView
+                android:id="@+id/iv_content_foto2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:src="@tools:sample/avatars"/>
+
+
+            <ImageView
+                android:id="@+id/iv_content_foto3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:src="@tools:sample/avatars"/>
 
         </LinearLayout>
     </ScrollView>

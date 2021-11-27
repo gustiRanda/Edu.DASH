@@ -3,6 +3,7 @@ package com.gmind.edudash
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.bumptech.glide.Glide
 import com.gmind.edudash.databinding.ActivityDetailBinding
 
@@ -29,6 +30,15 @@ class DetailActivity : AppCompatActivity() {
         Glide.with(this)
             .load(hipertensi?.contentAsset2)
             .into(activityDetailBinding.ivContentFoto)
+
+        Glide.with(this)
+            .load(hipertensi?.contentAsset3)
+            .into(activityDetailBinding.ivContentFoto2)
+
+
+        Glide.with(this)
+            .load(hipertensi?.contentAsset4)
+            .into(activityDetailBinding.ivContentFoto3)
 
         activityDetailBinding.tvDetailJudul.text = hipertensi?.contentJudul
 

@@ -9,5 +9,7 @@ data class Hipertensi (
     var contentDeskripsi : String = "",
     var contentIcon : Int = 0,
     var contentAsset : Int = 0,
-    var contentAsset2 : Int = 0
+    var contentAsset2 : Int = 0,
+    var contentAsset3 : Int = 0,
+    var contentAsset4 : Int = 0
 ) : Parcelable

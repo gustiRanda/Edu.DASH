@@ -43,14 +43,39 @@ class QuizActivity : AppCompatActivity() {
 
 
         activityQuizBinding.btnNext.setOnClickListener {
+//            val soal = soalList!![currentPosition-1]
+//            if (selectedOption !=soal.jawaban ){
+//                setColor(selectedOption, R.drawable.wrong_question_option)
+//                currentPosition++
+//            } else{
+//                score++
+//                setColor(selectedOption, R.drawable.correct_question_option)
+//                currentPosition++
+//            }
+//            when{
+//                currentPosition <= soalList!!.size ->{
+//                    setSoal()
+//                }
+//                else -> {
+//                    val intent = Intent(this, ResultActivity::class.java)
+//                    intent.putExtra(QuizData.score, score.toString())
+//                    intent.putExtra("soal size", soalList!!.size.toString())
+//
+//                    startActivity(intent)
+//                    finish()
+//                }
+//            }
+
+
             if (selectedOption != 0){
                 val soal = soalList!![currentPosition-1]
                 if (selectedOption != soal.jawaban){
                     setColor(selectedOption, R.drawable.wrong_question_option)
                 } else{
                     score++
+                    setColor(soal.jawaban, R.drawable.correct_question_option)
                 }
-                setColor(soal.jawaban, R.drawable.correct_question_option)
+
                 if (currentPosition == soalList!!.size)
                     activityQuizBinding.btnNext.text = "Selesai"
                 else
@@ -73,6 +98,8 @@ class QuizActivity : AppCompatActivity() {
             }
             selectedOption = 0
         }
+
+
     }
 
     private fun setColor(opsi: Int, color: Int) {
