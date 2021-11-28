@@ -12,9 +12,9 @@ class TipsSliderAdapter(private val items: ArrayList<TipsKesehatan>) : RecyclerV
         private val binding = itemView
         fun bind(data: TipsKesehatan){
             with(binding){
-                Glide.with(itemView)
-                    .load(data.foto)
-                    .into(ivSlider)
+//                Glide.with(itemView)
+//                    .load(data.foto)
+//                    .into(ivSlider)
 
                 tvSlider.text = data.judul
             }

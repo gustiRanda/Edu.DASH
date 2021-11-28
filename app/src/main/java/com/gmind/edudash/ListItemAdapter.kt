@@ -7,7 +7,8 @@ import com.bumptech.glide.Glide
 import com.gmind.edudash.databinding.ListItemBinding
 
 @Suppress("DEPRECATION")
-class ListItemAdapter(private val listItems: ArrayList<Hipertensi>): RecyclerView.Adapter<ListItemAdapter.ListViewHolder>() {
+class ListItemAdapter(private val listItems: ArrayList<Hipertensi>):
+        RecyclerView.Adapter<ListItemAdapter.ListViewHolder>() {
 
     private lateinit var onItemClickCallback: OnItemClickCallback
 

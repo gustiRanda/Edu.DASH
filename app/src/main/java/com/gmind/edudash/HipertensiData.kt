@@ -11,6 +11,9 @@ object HipertensiData {
         val data2 = Hipertensi(
             "Pengertian Hipertensi",
             "Hipertensi atau tekanan darah tinggi adalah kondisi peningkatan tekanan darah sistolik dan diastolik diatas 140/90 mmHg.",
+                "",
+                "",
+                "",
             R.drawable.ic_pengertian,
             R.drawable.ic_pengertian
         )
@@ -19,6 +22,9 @@ object HipertensiData {
         val data3 = Hipertensi(
             "Klasifikasi Hipertensi",
             "",
+                "",
+                "",
+                "",
             R.drawable.klasifikasi,
             R.drawable.klasifikasi,
             R.drawable.tabel
@@ -33,6 +39,9 @@ object HipertensiData {
                     "\n4. Jantung berdebar-debar\n" +
                     "\n5. Hidung berdarah \n" +
                     "\n(WHO, 2013)\n",
+                "",
+                "",
+                "",
             R.drawable.ic_gejala,
             R.drawable.ic_gejala
         )
@@ -43,6 +52,9 @@ object HipertensiData {
                     "\n2. Jantung Koroner\n" +
                     "\n3. Ginjal Kronis\n" +
                     "\n4. Diabetes Mellitus\n",
+                "",
+                "",
+                "",
             R.drawable.ic_gejala,
             R.drawable.ic_gejala
         )
@@ -89,6 +101,9 @@ object HipertensiData {
                     "\n" +
                     "6.\tKebiasaan merokok\n" +
                     "Nikotin dapat menyempitkan pembuluh darah sehingga jantung harus bekerja lebih keras untuk menggantikan pasokan oksigen menuju jaringan tubuh.\n",
+                "",
+                "",
+                "",
             R.drawable.ic_penyebab,
             R.drawable.ic_penyebab
         )
@@ -130,10 +145,15 @@ object HipertensiData {
 
                         "\n" +
                         "\nTips Membaca Label Makanan",
+                "\nPOLA DIET DASH \n",
+                "\nPOLA DIET DASH \n",
+                "\nJENIS MAKANAN YANG DIANJURKAN DAN TIDAK DIANJURKAN \n",
 
                 R.drawable.ic_gejala,
                 R.drawable.ic_gejala,
-                R.drawable.tabel_pola_diet_dash
+                R.drawable.produk_tinggi_natrium,
+                R.drawable.produk_rendah_natrium
+
         )
 
 

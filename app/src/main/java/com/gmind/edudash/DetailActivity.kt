@@ -40,9 +40,18 @@ class DetailActivity : AppCompatActivity() {
             .load(hipertensi?.contentAsset4)
             .into(activityDetailBinding.ivContentFoto3)
 
+
+        Glide.with(this)
+            .load(hipertensi?.contentAsset5)
+            .into(activityDetailBinding.ivContentFoto4)
+
         activityDetailBinding.tvDetailJudul.text = hipertensi?.contentJudul
 
         activityDetailBinding.tvDetailContent.text = hipertensi?.contentDeskripsi
+        activityDetailBinding.tvDetailContent2.text = hipertensi?.contentDeskripsi2
+        activityDetailBinding.tvDetailContent3.text = hipertensi?.contentDeskripsi3
+        activityDetailBinding.tvDetailContent4.text = hipertensi?.contentDeskripsi4
+//        activityDetailBinding.tvDetailContent5.text = hipertensi?.contentDeskripsi
 
         activityDetailBinding.tvBack.setOnClickListener {
             val intent = Intent(this, MateriActivity::class.java)

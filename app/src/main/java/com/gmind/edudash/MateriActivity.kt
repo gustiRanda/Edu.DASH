@@ -77,10 +77,15 @@ class MateriActivity : AppCompatActivity() {
 
         listItemAdapter.setOnItemClickCallback(object : ListItemAdapter.OnItemClickCallback {
             override fun onItemClicked(hipertensi: Hipertensi) {
-                        val intent = Intent(this@MateriActivity, DetailActivity::class.java)
-                        intent.putExtra(DetailActivity.EXTRA_HIPERTENSI, hipertensi)
-                        startActivity(intent)
-
+                if (hipertensi.contentJudul == "Diet DASH"){
+                    val intent = Intent(this@MateriActivity, DietDashActivity::class.java)
+                    intent.putExtra(DietDashActivity.EXTRA_HIPERTENSI, hipertensi)
+                    startActivity(intent)
+                } else{
+                    val intent = Intent(this@MateriActivity, DetailActivity::class.java)
+                    intent.putExtra(DetailActivity.EXTRA_HIPERTENSI, hipertensi)
+                    startActivity(intent)
+                }
             }
 
         })

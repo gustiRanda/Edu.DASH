@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/light_green"
     android:padding="20dp"
-    tools:context=".DetailActivity">
+    tools:context=".DietDashActivity">
 
 
     <TextView
@@ -73,48 +73,92 @@
 
             <ImageView
                 android:id="@+id/iv_content_foto"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:src="@tools:sample/avatars"/>
-
-            <TextView
-                android:id="@+id/tv_detail_content2"
-                tools:text="AAAAAAAAAAAA"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_width="330dp"
+                android:layout_height="330dp"
+                tools:src="@drawable/produk_tinggi_natrium" />
 
             <ImageView
                 android:id="@+id/iv_content_foto2"
+                android:layout_width="330dp"
+                android:layout_height="250dp"
+                tools:src="@drawable/produk_rendah_natrium"/>
+
+            <TextView
+                android:id="@+id/tv_detail_content2"
+                tools:text="POLA DIET DASH"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:src="@tools:sample/avatars"/>
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_pola_diet_dash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    tools:listitem="@layout/table_list_item" />
+
+            </HorizontalScrollView>
 
 
             <TextView
                 android:id="@+id/tv_detail_content3"
-                tools:text="AAAAAAAAAAAA"
+                tools:text="POLA DIET DASH"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
 
-            <ImageView
-                android:id="@+id/iv_content_foto3"
-                android:layout_width="wrap_content"
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:src="@tools:sample/avatars"/>
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_pola_diet_dash2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    tools:listitem="@layout/table_list_item2" />
+
+            </HorizontalScrollView>
 
             <TextView
                 android:id="@+id/tv_detail_content4"
-                tools:text="AAAAAAAAAAAA"
+                tools:text="JENIS MAKANAN YANG DIANJURKAN DAN TIDAK DIANJURKAN"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
 
-            <ImageView
-                android:id="@+id/iv_content_foto4"
-                android:layout_width="wrap_content"
+            <HorizontalScrollView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:src="@tools:sample/avatars"/>
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_jenis_makanan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    tools:listitem="@layout/table_list_item3" />
+
+            </HorizontalScrollView>
 
         </LinearLayout>
     </ScrollView>
