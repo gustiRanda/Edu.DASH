@@ -73,21 +73,23 @@
 
             <ImageView
                 android:id="@+id/iv_content_foto"
-                android:layout_width="330dp"
-                android:layout_height="330dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 tools:src="@drawable/produk_tinggi_natrium" />
 
             <ImageView
                 android:id="@+id/iv_content_foto2"
-                android:layout_width="330dp"
-                android:layout_height="250dp"
-                tools:src="@drawable/produk_rendah_natrium"/>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="@drawable/produk_rendah_natrium"
+                android:layout_marginTop="10dp"/>
 
             <TextView
                 android:id="@+id/tv_detail_content2"
                 tools:text="POLA DIET DASH"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"/>
 
 
             <HorizontalScrollView
@@ -113,7 +115,8 @@
                 android:id="@+id/tv_detail_content3"
                 tools:text="POLA DIET DASH"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"/>
 
 
 
@@ -139,7 +142,8 @@
                 android:id="@+id/tv_detail_content4"
                 tools:text="JENIS MAKANAN YANG DIANJURKAN DAN TIDAK DIANJURKAN"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"/>
 
 
             <HorizontalScrollView
@@ -159,6 +163,50 @@
                     tools:listitem="@layout/table_list_item3" />
 
             </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/tv_detail_content5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                tools:text="Contoh Menu Makanan"/>
+
+            <ImageView
+                android:id="@+id/iv_content_foto3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="@drawable/menu_diet_dash_1"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/iv_content_foto4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="@drawable/menu_diet_dash_2"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/iv_content_foto5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="@drawable/menu_diet_dash_3"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/iv_content_foto6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="@drawable/menu_diet_dash_4"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/iv_content_foto7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="@drawable/menu_diet_dash_5"
+                android:layout_marginTop="10dp"/>
 
         </LinearLayout>
     </ScrollView>

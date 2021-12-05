@@ -14,6 +14,7 @@ object HipertensiData {
                 "",
                 "",
                 "",
+                "",
             R.drawable.ic_pengertian,
             R.drawable.ic_pengertian
         )
@@ -22,6 +23,7 @@ object HipertensiData {
         val data3 = Hipertensi(
             "Klasifikasi Hipertensi",
             "",
+                "",
                 "",
                 "",
                 "",
@@ -42,6 +44,7 @@ object HipertensiData {
                 "",
                 "",
                 "",
+                "",
             R.drawable.ic_gejala,
             R.drawable.ic_gejala
         )
@@ -55,8 +58,9 @@ object HipertensiData {
                 "",
                 "",
                 "",
-            R.drawable.ic_gejala,
-            R.drawable.ic_gejala
+                "",
+            R.drawable.dampak,
+            R.drawable.dampak
         )
 
         val data6 = Hipertensi(
@@ -104,6 +108,7 @@ object HipertensiData {
                 "",
                 "",
                 "",
+                "",
             R.drawable.ic_penyebab,
             R.drawable.ic_penyebab
         )
@@ -148,11 +153,17 @@ object HipertensiData {
                 "\nPOLA DIET DASH \n",
                 "\nPOLA DIET DASH \n",
                 "\nJENIS MAKANAN YANG DIANJURKAN DAN TIDAK DIANJURKAN \n",
+                "\nContoh Menu Makanan \n",
 
                 R.drawable.ic_gejala,
                 R.drawable.ic_gejala,
                 R.drawable.produk_tinggi_natrium,
-                R.drawable.produk_rendah_natrium
+                R.drawable.produk_rendah_natrium,
+                R.drawable.menu_diet_dash_1,
+                R.drawable.menu_diet_dash_2,
+                R.drawable.menu_diet_dash_3,
+                R.drawable.menu_diet_dash_4,
+                R.drawable.menu_diet_dash_5,
 
         )
 

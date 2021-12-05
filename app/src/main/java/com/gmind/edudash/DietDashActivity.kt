@@ -56,6 +56,26 @@ class DietDashActivity : AppCompatActivity() {
             .load(hipertensi?.contentAsset3)
             .into(activityDietDashBinding.ivContentFoto2)
 
+        Glide.with(this)
+            .load(hipertensi?.contentAsset4)
+            .into(activityDietDashBinding.ivContentFoto3)
+
+        Glide.with(this)
+            .load(hipertensi?.contentAsset5)
+            .into(activityDietDashBinding.ivContentFoto4)
+
+        Glide.with(this)
+            .load(hipertensi?.contentAsset6)
+            .into(activityDietDashBinding.ivContentFoto5)
+
+        Glide.with(this)
+            .load(hipertensi?.contentAsset7)
+            .into(activityDietDashBinding.ivContentFoto6)
+
+        Glide.with(this)
+            .load(hipertensi?.contentAsset8)
+            .into(activityDietDashBinding.ivContentFoto7)
+
 
 
         activityDietDashBinding.tvDetailJudul.text = hipertensi?.contentJudul
@@ -64,7 +84,7 @@ class DietDashActivity : AppCompatActivity() {
         activityDietDashBinding.tvDetailContent2.text = hipertensi?.contentDeskripsi2
         activityDietDashBinding.tvDetailContent3.text = hipertensi?.contentDeskripsi3
         activityDietDashBinding.tvDetailContent4.text = hipertensi?.contentDeskripsi4
-//        activityDetailBinding.tvDetailContent5.text = hipertensi?.contentDeskripsi
+        activityDietDashBinding.tvDetailContent5.text = hipertensi?.contentDeskripsi5
 
         //diet dash
         rvPolaDietDash = activityDietDashBinding.rvPolaDietDash

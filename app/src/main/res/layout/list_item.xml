@@ -6,7 +6,8 @@
     android:background="@drawable/list_item_background"
     android:layout_margin="10dp"
     android:paddingTop="15dp"
-    android:paddingStart="10dp">
+    android:paddingStart="10dp"
+    android:paddingBottom="3dp">
 
     <ImageView
         android:id="@+id/iv_foto"

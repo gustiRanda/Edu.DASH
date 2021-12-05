@@ -34,7 +34,7 @@
         app:layout_constraintTop_toBottomOf="@id/tv_back"
         android:fontFamily="@font/roboto_bold"
         android:textColor="@color/white"
-        android:textSize="16sp"/>
+        android:textSize="18sp"/>
 
     <TextView
         android:id="@+id/tv_indeks_berat_badan"
@@ -61,7 +61,7 @@
         android:backgroundTint="@color/white"
         android:fontFamily="@font/roboto"
         android:hint="Klik Disini Untuk Isikan Berat Badan mu!"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="16sp"
@@ -94,7 +94,7 @@
         android:backgroundTint="@color/white"
         android:fontFamily="@font/roboto"
         android:hint="Klik Disini Untuk Isikan Tinggi Badan mu!"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="16sp"
