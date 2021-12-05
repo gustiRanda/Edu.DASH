@@ -17,7 +17,7 @@
         android:fontFamily="@font/roboto"
         android:gravity="center_vertical"
         android:text="@string/kembali_ke_menu_utama"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="16sp"
         app:drawableStartCompat="@drawable/ic_back"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,7 +33,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_back"
         android:fontFamily="@font/roboto_bold"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="18sp"/>
 
     <TextView
@@ -44,7 +44,7 @@
         android:layout_marginTop="32dp"
         android:fontFamily="@font/roboto"
         android:text="Berat Badan(kg) : "
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,12 +58,12 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="@color/black"
         android:fontFamily="@font/roboto"
         android:hint="Klik Disini Untuk Isikan Berat Badan mu!"
         android:inputType="numberDecimal"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -78,7 +78,7 @@
         android:layout_marginTop="32dp"
         android:fontFamily="@font/roboto"
         android:text="Tinggi Badan(cm) : "
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,12 +91,12 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="@color/black"
         android:fontFamily="@font/roboto"
         android:hint="Klik Disini Untuk Isikan Tinggi Badan mu!"
         android:inputType="numberDecimal"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -112,7 +112,7 @@
         android:backgroundTint="@color/light_blue"
         android:fontFamily="@font/roboto"
         android:text="Cek Status Gizi Ku"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -133,7 +133,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto"
             android:text="Status Gizi ku"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="16sp" />
 
         <TextView
@@ -142,7 +142,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto"
             android:text="Indeks Massa Tubuh(IMT) :"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="16sp" />
 
         <TextView
@@ -150,7 +150,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_bold"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="16sp"
             tools:text="Kurus" />
 
