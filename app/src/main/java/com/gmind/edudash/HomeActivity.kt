@@ -1,6 +1,8 @@
 package com.gmind.edudash
 
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -31,6 +33,33 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this, QuizActivity::class.java)
             startActivity(intent)
         }
+
+        activityHomeBinding.whatsapp.setOnClickListener {
+
+            val installed = isAppInstalled("com.whatsapp");
+
+            if (installed) {
+                val intent = Intent(Intent.ACTION_VIEW)
+                intent.data = Uri.parse(BuildConfig.WHATSAPP_URI)
+                startActivity(intent)
+            } else {
+                Toast.makeText(this@HomeActivity,
+                    "Whatsapp Tidak Ditemukan!",
+                    Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+
+    private fun isAppInstalled(string: String): Boolean {
+        var isInstalled: Boolean
+        try {
+            packageManager.getPackageInfo(string, PackageManager.GET_ACTIVITIES)
+            isInstalled = true
+        } catch (e: PackageManager.NameNotFoundException) {
+            isInstalled = false
+            e.printStackTrace()
+        }
+        return isInstalled
     }
 
     override fun onBackPressed() {

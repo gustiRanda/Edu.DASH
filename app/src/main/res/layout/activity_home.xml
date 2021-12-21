@@ -9,10 +9,9 @@
 
     <ImageView
         android:id="@+id/iv_main"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="10dp"
-        android:src="@mipmap/ic_launcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_pengertian"
         app:layout_constraintBottom_toTopOf="@+id/materi"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -37,8 +36,8 @@
 
         <ImageView
             android:id="@+id/iv_materi"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:src="@drawable/ic_pengertian" />
 
         <TextView
@@ -103,7 +102,7 @@
         android:paddingLeft="10dp"
         android:paddingTop="15dp"
         android:paddingBottom="3dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/whatsapp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -126,6 +125,43 @@
             android:fontFamily="@font/roboto_bold"
             android:gravity="center_vertical"
             android:text="Kuis"
+            android:textColor="@color/donker"
+            android:textSize="28sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/whatsapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/list_menu_background"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kuis">
+
+        <ImageView
+            android:id="@+id/iv_whatsapp"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/whatsapp" />
+
+        <TextView
+            android:id="@+id/tv_whatsapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_whatsapp"
+            android:layout_alignBottom="@id/iv_whatsapp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/iv_whatsapp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center_vertical"
+            android:text="Konsultasi di WA"
             android:textColor="@color/donker"
             android:textSize="28sp" />
 
