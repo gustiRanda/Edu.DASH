@@ -19,7 +19,7 @@
         android:text="@string/kembali_ke_menu_utama"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:drawableStartCompat="@drawable/ic_back"
+        app:drawableStartCompat="@drawable/ic_back_black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,36 +36,36 @@
         android:textColor="@color/black"
         android:textSize="18sp"/>
 
+
+
     <TextView
         android:id="@+id/tv_indeks_berat_badan"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/roboto"
         android:text="Berat Badan(kg) : "
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_indeks_judul" />
 
 
     <EditText
         android:id="@+id/et_indeks_berat_badan"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
         android:backgroundTint="@color/black"
         android:fontFamily="@font/roboto"
-        android:hint="Klik Disini Untuk Isikan Berat Badan mu!"
+        android:hint="000"
         android:inputType="numberDecimal"
         android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColorHint="@color/grey"
+        android:textSize="50sp"
+        android:maxLength="3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_indeks_berat_badan" />
 
@@ -74,32 +74,29 @@
         android:id="@+id/tv_indeks_tinggi_badan"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
         android:fontFamily="@font/roboto"
         android:text="Tinggi Badan(cm) : "
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_indeks_berat_badan" />
+        app:layout_constraintBottom_toBottomOf="@id/tv_indeks_berat_badan"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <EditText
         android:id="@+id/et_indeks_tinggi_badan"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="70dp"
         android:backgroundTint="@color/black"
         android:fontFamily="@font/roboto"
-        android:hint="Klik Disini Untuk Isikan Tinggi Badan mu!"
+        android:hint="000"
         android:inputType="numberDecimal"
         android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        android:textSize="16sp"
+        android:textColorHint="@color/grey"
+        android:textSize="50sp"
+        android:maxLength="3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_indeks_tinggi_badan" />
 
     <Button
@@ -110,7 +107,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:backgroundTint="@color/light_blue"
-        android:fontFamily="@font/roboto"
+        android:fontFamily="@font/roboto_bold"
         android:text="Cek Status Gizi Ku"
         android:textColor="@color/black"
         android:textSize="16sp"
@@ -154,11 +151,6 @@
             android:textSize="16sp"
             tools:text="Kurus" />
 
-        <ImageView
-            android:id="@+id/iv_indeks_status"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:src="@tools:sample/avatars" />
     </LinearLayout>
 
 
