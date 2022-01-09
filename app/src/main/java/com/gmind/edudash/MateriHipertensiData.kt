@@ -1,14 +1,14 @@
 package com.gmind.edudash
 
-object HipertensiData {
+object MateriHipertensiData {
 
     //nullable type
 
-    fun getHipertensiData() : ArrayList<Hipertensi>{
-        val hipertensi : ArrayList<Hipertensi> = arrayListOf()
+    fun getHipertensiData() : ArrayList<MateriHipertensi>{
+        val materiHipertensi : ArrayList<MateriHipertensi> = arrayListOf()
 
 
-        val data2 = Hipertensi(
+        val data2 = MateriHipertensi(
             "Pengertian Hipertensi",
             "Hipertensi atau tekanan darah tinggi adalah kondisi peningkatan tekanan darah sistolik dan diastolik diatas 140/90 mmHg.",
                 "",
@@ -20,7 +20,7 @@ object HipertensiData {
         )
 
 
-        val data3 = Hipertensi(
+        val data3 = MateriHipertensi(
             "Klasifikasi Hipertensi",
             "",
                 "",
@@ -32,7 +32,7 @@ object HipertensiData {
             R.drawable.tabel
         )
 
-        val data4 = Hipertensi(
+        val data4 = MateriHipertensi(
             "Tanda dan Gejala Hipertensi",
             "Hipertensi disebut sebagai sillent killer, sehingga kebanyakan penderita hipertensi tidak memiliki gejala sama sekali. Terkadang hipertensi memiliki tanda dan gejala antara lain : \n" +
                     "\n1. Sakit kepala\n" +
@@ -49,7 +49,7 @@ object HipertensiData {
             R.drawable.ic_gejala
         )
 
-        val data5 = Hipertensi(
+        val data5 = MateriHipertensi(
             "Komplikasi Hipertensi",
             "\n1. Stroke\n" +
                     "\n2. Jantung Koroner\n" +
@@ -63,7 +63,7 @@ object HipertensiData {
             R.drawable.dampak
         )
 
-        val data6 = Hipertensi(
+        val data6 = MateriHipertensi(
             "Penyebab Hipertensi",
             "Penyebab Yang Tidak Dapat Dikendalikan\n" +
 
@@ -113,7 +113,7 @@ object HipertensiData {
             R.drawable.ic_penyebab
         )
 
-        val data7 = Hipertensi(
+        val data7 = MateriHipertensi(
                 "Diet DASH",
                 "\nDiet Dietary Approaches to Stop Hypertension (DASH) merupakan salah satu diet atau pengaturan pola makan pada penderita hipertensi untuk membantu terapi atau mencegah hipertensi (darah tinggi). \n" +
 
@@ -169,13 +169,13 @@ object HipertensiData {
 
 
 
-        hipertensi.add(data2)
-        hipertensi.add(data3)
-        hipertensi.add(data4)
-        hipertensi.add(data5)
-        hipertensi.add(data6)
-        hipertensi.add(data7)
-        return hipertensi
+        materiHipertensi.add(data2)
+        materiHipertensi.add(data3)
+        materiHipertensi.add(data4)
+        materiHipertensi.add(data5)
+        materiHipertensi.add(data6)
+        materiHipertensi.add(data7)
+        return materiHipertensi
     }
 
 

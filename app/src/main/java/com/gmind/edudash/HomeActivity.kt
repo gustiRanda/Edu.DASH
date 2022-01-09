@@ -20,7 +20,7 @@ class HomeActivity : AppCompatActivity() {
         setContentView(activityHomeBinding.root)
 
         activityHomeBinding.materi.setOnClickListener {
-            val intent = Intent(this, MateriActivity::class.java)
+            val intent = Intent(this, MateriHipertensiActivity::class.java)
             startActivity(intent)
         }
 

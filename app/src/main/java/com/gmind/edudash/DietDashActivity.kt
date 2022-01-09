@@ -41,7 +41,7 @@ class DietDashActivity : AppCompatActivity() {
         activityDietDashBinding = ActivityDietDashBinding.inflate(layoutInflater)
         setContentView(activityDietDashBinding.root)
 
-        val hipertensi = intent.getParcelableExtra<Hipertensi>(DetailActivity.EXTRA_HIPERTENSI)
+        val hipertensi = intent.getParcelableExtra<MateriHipertensi>(DetailActivity.EXTRA_HIPERTENSI)
 
         Glide.with(this)
             .load(hipertensi?.contentAsset)
@@ -122,7 +122,7 @@ class DietDashActivity : AppCompatActivity() {
 
 
         activityDietDashBinding.tvBack.setOnClickListener {
-            val intent = Intent(this, MateriActivity::class.java)
+            val intent = Intent(this, MateriHipertensiActivity::class.java)
             startActivity(intent)
             finishAffinity()
         }

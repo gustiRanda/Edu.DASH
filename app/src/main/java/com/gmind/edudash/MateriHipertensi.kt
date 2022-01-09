@@ -4,7 +4,7 @@ import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data class Hipertensi (
+data class MateriHipertensi (
     var contentJudul : String = "",
     var contentDeskripsi : String = "",
     var contentDeskripsi2 : String = "",

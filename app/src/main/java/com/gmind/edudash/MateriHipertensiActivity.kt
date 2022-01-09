@@ -1,8 +1,6 @@
 package com.gmind.edudash
 
 import android.content.Intent
-import android.content.pm.PackageManager
-import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -10,7 +8,6 @@ import android.os.Looper
 import android.text.Html
 import android.util.Log
 import android.widget.TextView
-import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -18,7 +15,7 @@ import androidx.viewpager2.widget.ViewPager2
 import com.gmind.edudash.*
 import com.gmind.edudash.databinding.ActivityMateriBinding
 
-class MateriActivity : AppCompatActivity() {
+class MateriHipertensiActivity : AppCompatActivity() {
 
     private lateinit var activityMateriBinding: ActivityMateriBinding
 
@@ -29,8 +26,8 @@ class MateriActivity : AppCompatActivity() {
     private lateinit var handler: Handler
     private lateinit var runnable: Runnable
 
-    private lateinit var listItemAdapter: ListItemAdapter
-    private val itemList = ArrayList<Hipertensi>()
+    private lateinit var materiHipertensiAdapter: MateriHipertensiAdapter
+    private val itemList = ArrayList<MateriHipertensi>()
     private lateinit var rvItem: RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -69,21 +66,21 @@ class MateriActivity : AppCompatActivity() {
         rvItem = activityMateriBinding.rvItem
         rvItem.setHasFixedSize(true)
 
-        itemList.addAll(HipertensiData.getHipertensiData())
+        itemList.addAll(MateriHipertensiData.getHipertensiData())
 
         rvItem.layoutManager = LinearLayoutManager(this)
-        listItemAdapter = ListItemAdapter(itemList)
-        rvItem.adapter = listItemAdapter
+        materiHipertensiAdapter = MateriHipertensiAdapter(itemList)
+        rvItem.adapter = materiHipertensiAdapter
 
-        listItemAdapter.setOnItemClickCallback(object : ListItemAdapter.OnItemClickCallback {
-            override fun onItemClicked(hipertensi: Hipertensi) {
-                if (hipertensi.contentJudul == "Diet DASH"){
-                    val intent = Intent(this@MateriActivity, DietDashActivity::class.java)
-                    intent.putExtra(DietDashActivity.EXTRA_HIPERTENSI, hipertensi)
+        materiHipertensiAdapter.setOnItemClickCallback(object : MateriHipertensiAdapter.OnItemClickCallback {
+            override fun onItemClicked(materiHipertensi: MateriHipertensi) {
+                if (materiHipertensi.contentJudul == "Diet DASH"){
+                    val intent = Intent(this@MateriHipertensiActivity, DietDashActivity::class.java)
+                    intent.putExtra(DietDashActivity.EXTRA_HIPERTENSI, materiHipertensi)
                     startActivity(intent)
                 } else{
-                    val intent = Intent(this@MateriActivity, DetailActivity::class.java)
-                    intent.putExtra(DetailActivity.EXTRA_HIPERTENSI, hipertensi)
+                    val intent = Intent(this@MateriHipertensiActivity, DetailActivity::class.java)
+                    intent.putExtra(DetailActivity.EXTRA_HIPERTENSI, materiHipertensi)
                     startActivity(intent)
                 }
             }

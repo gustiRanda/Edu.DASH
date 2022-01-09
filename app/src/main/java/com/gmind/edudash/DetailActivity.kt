@@ -3,7 +3,6 @@ package com.gmind.edudash
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import com.bumptech.glide.Glide
 import com.gmind.edudash.databinding.ActivityDetailBinding
 
@@ -20,7 +19,7 @@ class DetailActivity : AppCompatActivity() {
         activityDetailBinding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(activityDetailBinding.root)
 
-        val hipertensi = intent.getParcelableExtra<Hipertensi>(EXTRA_HIPERTENSI)
+        val hipertensi = intent.getParcelableExtra<MateriHipertensi>(EXTRA_HIPERTENSI)
 
         Glide.with(this)
             .load(hipertensi?.contentAsset)
@@ -54,7 +53,7 @@ class DetailActivity : AppCompatActivity() {
 //        activityDetailBinding.tvDetailContent5.text = hipertensi?.contentDeskripsi
 
         activityDetailBinding.tvBack.setOnClickListener {
-            val intent = Intent(this, MateriActivity::class.java)
+            val intent = Intent(this, MateriHipertensiActivity::class.java)
             startActivity(intent)
             finishAffinity()
         }

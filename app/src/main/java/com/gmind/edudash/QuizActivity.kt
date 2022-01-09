@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import androidx.core.content.ContextCompat
+import com.bumptech.glide.Glide
 import com.gmind.edudash.databinding.ActivityQuizBinding
 
 class QuizActivity : AppCompatActivity() {
@@ -150,6 +151,12 @@ class QuizActivity : AppCompatActivity() {
 
         //color
         activityQuizBinding.progressBar.progressDrawable.setColorFilter(resources.getColor(R.color.light_blue), PorterDuff.Mode.SRC_IN)
+
+//        activityQuizBinding.ivSoal.drawable = soal.soalPhoto
+
+        Glide.with(this)
+                .load(soal.soalPhoto)
+                .into(activityQuizBinding.ivSoal)
 
         activityQuizBinding.tvNoSoal.text = "${currentPosition}" + "/" + "${soalList!!.size}"
 

@@ -7,8 +7,8 @@ import com.bumptech.glide.Glide
 import com.gmind.edudash.databinding.ListItemBinding
 
 @Suppress("DEPRECATION")
-class ListItemAdapter(private val listItems: ArrayList<Hipertensi>):
-        RecyclerView.Adapter<ListItemAdapter.ListViewHolder>() {
+class MateriHipertensiAdapter(private val listItems: ArrayList<MateriHipertensi>):
+        RecyclerView.Adapter<MateriHipertensiAdapter.ListViewHolder>() {
 
     private lateinit var onItemClickCallback: OnItemClickCallback
 
@@ -19,7 +19,7 @@ class ListItemAdapter(private val listItems: ArrayList<Hipertensi>):
 
     inner class ListViewHolder(itemView: ListItemBinding) : RecyclerView.ViewHolder(itemView.root){
         private val binding = itemView
-        fun bind(data: Hipertensi){
+        fun bind(data: MateriHipertensi){
             with(binding){
 
 
@@ -47,6 +47,6 @@ class ListItemAdapter(private val listItems: ArrayList<Hipertensi>):
     override fun getItemCount(): Int = listItems.size
 
     interface OnItemClickCallback{
-        fun onItemClicked(hipertensi: Hipertensi)
+        fun onItemClicked(materiHipertensi: MateriHipertensi)
     }
 }

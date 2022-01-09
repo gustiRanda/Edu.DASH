@@ -10,6 +10,7 @@ object QuizData {
         val soal1 = Quiz(
                 1,
                 "Seseorang mengalami hipertensi atau tekanan darah tinggi jika tekanan darah sebesar ...",
+                R.drawable.dampak,
                 "130/90",
                 "120/80",
                 "110/70",
@@ -19,6 +20,7 @@ object QuizData {
         val soal2 = Quiz(
                 2,
                 "Penyebab yang dapat dikendalikan terjadinya hipertensi antara lain, kecuali …",
+                R.drawable.dampak,
                 "Kebiasaan merokok",
                 "Obesitas atau kegemukan",
                 "Jenis Kelamin",
@@ -28,6 +30,7 @@ object QuizData {
         val soal3 = Quiz(
                 3,
                 "Pola makan yang dianjurkan untuk penderita hipertensi adalah ..",
+                R.drawable.dampak,
 
             "Diet DASH",
             "Diet tinggi lemak",
@@ -38,6 +41,7 @@ object QuizData {
         val soal4 = Quiz(
                 4,
                 "Dibawah ini merupakan prinsip diet DASH kecuali..",
+                R.drawable.dampak,
 
             "Konsumsi rendah natrium (makanan yang diawetkan)",
                     "Konsumsi tinggi serat (buah dan sayur)",
@@ -49,6 +53,7 @@ object QuizData {
         val soal5 = Quiz(
                 5,
                 "Dibawah ini kelompok makanan yang tinggi natrium adalah ",
+                R.drawable.dampak,
 
            "Kornet, sosis, ikan asin, abon",
                   " Pisang, melon, semangka",
@@ -60,6 +65,7 @@ object QuizData {
         val soal6 = Quiz(
                 6,
                 "Dibawah ini kelompok bumbu yang harus dibatasi penggunaanya adalah  ",
+                R.drawable.dampak,
 
            "Bawang putih, bawang merah, cabe",
                    "Jahe, kunyit",
@@ -72,6 +78,7 @@ object QuizData {
         val soal7 = Quiz(
                 7,
                 "Kulit ayam merupakan makanan sumber … ",
+                R.drawable.dampak,
 
            "Serat",
                   "Vitamin",
@@ -83,6 +90,7 @@ object QuizData {
         val soal8 = Quiz(
                 8,
                 "Manfaat menerapkan diet DASH, kecuali… ",
+                R.drawable.dampak,
 
             "Meningkatkan tekanan darah",
                     "Menurunkan tekanan darah",
@@ -95,6 +103,7 @@ object QuizData {
         val soal9 = Quiz(
                 9,
                 "Dalam sehari mengonsumsi buah dan sayur sesuai anjuran diet DASH sebanyak ...",
+                R.drawable.dampak,
 
            "1 porsi",
                   "3 porsi",
@@ -106,6 +115,7 @@ object QuizData {
         val soal10 = Quiz(
                 10,
                 "Tahu, tempe, dan kacang-kacangan merupakan kelompok sumber makanan ...",
+                R.drawable.dampak,
 
            "Protein nabati",
                   "Protein hewani",
